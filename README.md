@@ -4,9 +4,9 @@
 
 During the hard fork at height 237907, when updating the namada database, for some unknown reason, indexes were removed from the database. Accordingly, it will not be possible to synchronize namadexer with 0. There are two ways to recover.
 
-**1й - долгий**. Но в unix style. Порядка 2х дней. Нужно запустить временную ноду namada с состоянием до хардфорка, и синхронизировать ее с 0 до 237907. Синхронизировать namadexer до высоты 237907. Переключиться в конфиге namadaxer на актуальную сеть namada , после хардфорка. И завершить синхронизацию базы. 
+**1й - долгий**. Но в unix style. Порядка 2х дней. Нужно запустить временную ноду namada с состоянием до хардфорка, и синхронизировать ее с 0 до 237907. Синхронизировать namadexer до высоты 237907. Переключиться в конфиге namadexer на актуальную сеть namada , после хардфорка. И завершить синхронизацию базы. 
 
-**1st - long**. But in unix style. About 2 days. You need to launch a temporary namada node with the state before the hard fork, and synchronize it from 0 to 237907. Synchronize namadexer to a height of 237907. Switch in the namadaxer config to the current namada network, after the hard fork. And complete database synchronization.
+**1st - long**. But in unix style. About 2 days. You need to launch a temporary namada node with the state before the hard fork, and synchronize it from 0 to 237907. Synchronize namadexer to a height of 237907. Switch in the namadexer config to the current namada network, after the hard fork. And complete database synchronization.
 
 **2й -быстрый**. Примерно 10 минут. Просто восстановить базу данных из дампа.
 
@@ -26,7 +26,7 @@ Both options for namadexer version 1.0.1
 
 stop the indexer
 
-```sudo systemctl stop namadaxer-indexerd```
+```sudo systemctl stop namadexer-indexerd```
 
 удаляем существующую базу postgresql
 
@@ -50,7 +50,7 @@ In the namadexer configuration, we change the address of the namada node to a te
 
 start the indexer
 
-```sudo systemctl restart namadaxer-indexerd```
+```sudo systemctl restart namadexer-indexerd```
 
 Ждем синхронизацию до 237907 блока. Останавливаем индексер, В конфигурации namadexer возвращаем обратно свою локальную ноду namada
 
@@ -78,7 +78,7 @@ download postgresql database dump
 
 stop the indexer
 
-```sudo systemctl stop namadaxer-indexerd```
+```sudo systemctl stop namadexer-indexerd```
 
 удаляем существующую базу postgresql
 
