@@ -4,9 +4,9 @@
 
 During the hard fork at height 237907, when updating the namada database, for some unknown reason, indexes were removed from the database. Accordingly, it will not be possible to synchronize namadexer with 0. There are two ways to recover.
 
-**1й - долгий**. Но в unix style. Порядка 2х дней. Нужно запустить временную ноду namada с состоянием до хардфорка, и синхронизировать ее с 0 до 237907. Синхронизировать namadexer до высоты 237907. Переключиться в конфиге namadexer на актуальную сеть namada , после хардфорка. И завершить синхронизацию базы. 
+**1й - долгий**. Порядка 2х дней. Нужно запустить временную ноду namada с состоянием до хардфорка, и синхронизировать ее с 0 до 237907. Синхронизировать namadexer до высоты 237907. Переключиться в конфиге namadexer на актуальную сеть namada , после хардфорка. И завершить синхронизацию базы. 
 
-**1st - long**. But in unix style. About 2 days. You need to launch a temporary namada node with the state before the hard fork, and synchronize it from 0 to 237907. Synchronize namadexer to a height of 237907. Switch in the namadexer config to the current namada network, after the hard fork. And complete database synchronization.
+**1st - long**. About 2 days. You need to launch a temporary namada node with the state before the hard fork, and synchronize it from 0 to 237907. Synchronize namadexer to a height of 237907. Switch in the namadexer config to the current namada network, after the hard fork. And complete database synchronization.
 
 **2й -быстрый**. Примерно 10 минут. Просто восстановить базу данных из дампа.
 
