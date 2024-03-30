@@ -98,3 +98,7 @@ Restoring the database from a dump
 
 ```sudo -u postgres pg_restore --dbname blockchain --format=tar blockchain.dump.tar```
 
+
+запускаем индексер, ждем синхронизацию до актуального блока.
+
+start indexer, wait for synchronization to the current block.
