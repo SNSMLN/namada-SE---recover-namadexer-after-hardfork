@@ -40,9 +40,9 @@ create a new postgresql database
 
 ```sudo -u postgres createdb blockchain```
 
-В конфигурации namadexer изменяем адрес ноды namada на временно запущенную ноду намады, с состоянием до хардфорка. Можно запустить свою. Можно использовать чужую ноду.
+В конфигурации namadexer изменяем адрес ноды namada на временно запущенную ноду намады, с состоянием до хардфорка. Можно запустить свою. Можно использовать чужую ноду , спасибо @BlackOreo.
 
-In the namadexer configuration, we change the address of the namada node to a temporarily running namada node, with the state before the hard fork. You can launch your own. You can use someone else's node.
+In the namadexer configuration, we change the address of the namada node to a temporarily running namada node, with the state before the hard fork. You can launch your own. You can use someone else's node, thanks @BlackOreo.
 
 ```--indexer-tendermint-addr http://51.159.167.32:26657 ```
 
